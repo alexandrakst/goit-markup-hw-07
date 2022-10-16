@@ -463,68 +463,68 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="modal-form">
-          <div class="form-element">
-            <label class="form-label" for="name">Ім'я</label>
-            <div class="input-wrap">
-              <input class="form-input" type="text" name="name" id="name" />
-              <svg class="form-icon" width="18" height="18">
+        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal__form">
+          <div class="modal__form-element">
+            <label class="modal__form-label" for="name">Ім'я</label>
+            <div class="modal__input-wrap">
+              <input class="modal__form-input" type="text" name="name" id="name" />
+              <svg class="modal__form-icon" width="18" height="18">
                 <use href="./images/defs.svg#icon-person-modal"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-element">
-            <label class="form-label" for="tel">Телефон</label>
-            <div class="input-wrap">
-              <input class="form-input" type="tel" name="tel" id="tel" />
-              <svg class="form-icon" width="18" height="18">
+          <div class="modal__form-element">
+            <label class="modal__form-label" for="tel">Телефон</label>
+            <div class="modal__input-wrap">
+              <input class="modal__form-input" type="tel" name="tel" id="tel" />
+              <svg class="modal__form-icon" width="18" height="18">
                 <use href="./images/defs.svg#icon-phone-modal"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-element">
-            <label class="form-label" for="email">Пошта</label>
-            <div class="input-wrap">
-              <input class="form-input" type="email" name="email" id="email" />
-              <svg class="form-icon" width="18" height="18">
+          <div class="modal__form-element">
+            <label class="modal__form-label" for="email">Пошта</label>
+            <div class="modal__input-wrap">
+              <input class="modal__form-input" type="email" name="email" id="email" />
+              <svg class="modal__form-icon" width="18" height="18">
                 <use href="./images/defs.svg#icon-email-modal"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-element last">
-            <label class="form-label" for="textarea">Коментар</label>
+          <div class="modal__form-element last">
+            <label class="modal__form-label" for="textarea">Коментар</label>
             <textarea
-              class="form-input textarea"
+              class="modal__form-input textarea"
               name="textarea"
               id="textarea"
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div class="accept">
-            <label class="label-accept" for="accept">
+          <div class="modal__accept">
+            <label class="modal__label-accept" for="accept">
               <input
-                class="accept-input hidden"
+                class="modal__accept-input hidden"
                 type="checkbox"
                 name="accept"
                 id="accept"
                 required
               />
-              <span class="checkbox">
+              <span class="modal__checkbox">
                 <svg class="" width="11" height="8">
                   <use href="./images/defs.svg#icon-vector"></use>
                 </svg>
               </span>
-              Погоджуюся з розсилкою та приймаю &nbsp;<a href="#" class="terms"> Умови договору</a>
+              Погоджуюся з розсилкою та приймаю &nbsp;<a href="#" class="modal__terms"> Умови договору</a>
             </label>
           </div>
-          <button class="submit-button" type="submit">Відправити</button>
+          <button class="modal__submit-button" type="submit">Відправити</button>
         </form>
 
-        <button class="close-button" type="button" data-modal-close>
+        <button class="modal__close-button" type="button" data-modal-close>
           <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"

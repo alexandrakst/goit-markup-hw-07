@@ -1,19 +1,24 @@
-.portfolio-item {
+.portfolio__item {
     margin-right: 8px;
   }
+
+  .portfolio__list {
+    display: flex;
+    justify-content: center;
+  }
   
-  .portfolio-item:last-child {
+  .portfolio__item:last-child {
     margin-right: 0;
   }
 
 
-.portfolio-image:hover,
-.portfolio-image:focus {
+.product__image:hover,
+.product__image:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-images {
+.portfolio__cards {
   margin-top: 50px;
 
   display: flex;
@@ -21,7 +26,7 @@
   gap: 30px;
 }
 
-.portfolio-image {
+.product__image {
   display: block;
 
   text-decoration: none;
@@ -29,7 +34,7 @@
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-text {
+.product__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -47,17 +52,17 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-before {
+.product__before {
   position: relative;
 
   overflow: hidden;
 }
 
-.portfolio-image:hover .portfolio-text {
+.product__image:hover .product__text {
   transform: translateY(0);
 }
 
-.portfolio-border {
+.product__border {
   padding: 20px 24px 20px 24px;
 
   background-color: var(--fourth-text-color);
@@ -66,7 +71,7 @@
   border-top: transparent;
 }
 
-.portfolio-header {
+.product__header {
   margin-bottom: 4px;
 
   font-size: 18px;
@@ -77,7 +82,7 @@
   color: var(--primary-text-color);
 }
 
-.portfolio-paragraph {
+.product__paragraph {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -85,7 +90,7 @@
   color: var(--third-text-color);
 }
 
-.portfolio-section {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
