@@ -1,5 +1,5 @@
-.about-title-hidden,
-.portfolio-title-hidden {
+.about__title-hidden,
+.portfolio__title-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -12,12 +12,12 @@
   margin: -1px;
 }
 
-.about-section {
+.about {
   padding-top: 94px;
   padding-bottom: 47px;
 }
 
-.about-header {
+.about__header {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -26,26 +26,26 @@
   text-transform: uppercase;
 }
 
-.about-p {
+.about__p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
 
-.about-list {
+.about__list {
   display: flex;
 }
 
-.about-info {
+.about__info {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
 
-.about-info:last-child {
+.about__info:last-child {
   margin-right: 0;
 }
 
-.about-icon {
+.about__icon {
   display: flex;
   align-items: center;
   justify-content: center;
