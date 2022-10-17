@@ -1,3 +1,7 @@
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+
 .header-nav__link:hover,
 .header-nav__link:focus,
 .header-nav__contact:hover,
@@ -6,19 +10,15 @@
   text-decoration: none;
 }
 
-.header-nav__link.current {
+.header-nav__link--current {
   color: var(--accent-color);
 }
 
-.header {
-  border-bottom: 1px solid var(--border-color);
-}
-
-.header-nav__list .header-nav__link.current {
+.header-nav__list .header-nav__link--current {
   position: relative;
 }
 
-.header-nav__list .header-nav__link.current::after {
+.header-nav__list .header-nav__link--current::after {
   position: absolute;
   content: '';
   display: block;
@@ -31,7 +31,7 @@
 
 .header-nav__link,
 .header-nav__contact,
-.current {
+.header-nav__link--current {
   display: flex;
   align-items: center;
 
@@ -69,7 +69,7 @@
 
 .header-nav__item,
 .header-nav__mail,
-.header-phone {
+.header-nav__phone {
   margin-right: 50px;
 
   font-weight: 500;
@@ -78,26 +78,26 @@
 }
 
 .header-nav__item:last-child,
-.header-phone:last-child {
+.header-nav__phone:last-child {
   margin-right: 0;
 }
 
 .header-nav__mail,
-.header-phone {
+.header-nav__phone {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.header-icon:hover,
-.header-icon:focus {
-  fill: var(--accent-color);
-}
-
-.header-icon {
+.header-nav__icon {
   fill: currentColor;
 
   margin-right: 10px;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .header.portfolio__list {
