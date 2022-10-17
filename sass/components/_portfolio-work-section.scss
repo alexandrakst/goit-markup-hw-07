@@ -38,7 +38,8 @@
   }
 }
 
-.product__image:hover .product__text {
+.product__image:hover .product__text,
+.product__image:focus .product__text {
   transform: translateY(0);
 }
 
